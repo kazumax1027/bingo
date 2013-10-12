@@ -1,0 +1,26 @@
+#num {
+    font-size: 300pt;
+    color: #303030;
+}
+
+#numlist {
+    font-size: 30pt;
+    color: #303030;
+}
+
+#reserved_message {
+    font-size: 50pt;
+    color: #303030;
+}
+
+#msg_window {
+    position:absolute;
+    visibility:hidden;
+    background-color:transparent;
+    padding:0px;
+}
+
+#message {
+    font-size: 120pt;
+    color: #FF0000;
+}

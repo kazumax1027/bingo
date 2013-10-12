@@ -1,0 +1,133 @@
+<html>
+<head>
+<title>Bingo!</title>
+<link href="bingo.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="bingo.js"></script>
+<script type="text/javascript">
+function onClickButton() {
+  if (status == STATUS_STOPPED) {
+    document.bingoform.start_button.value = "　Stop!　";
+    status = STATUS_RUNNING;
+    runBingo();
+  }
+  else {
+    status = STATUS_STOPBTN_PRESSED;
+  }
+}
+</script>
+</head>
+<body onload="initImage()">
+<form name="bingoform">
+<img src="bingo_logo.png">
+<table width="100%" border="2"  bordercolor="#FF852F" cellspacing="0">
+<tr><td>
+<table width="100%">
+<tr>
+<td width="600"><img width="600" src="" id="id_image"></td>
+<td id="num_td" align="center"><label id="num">&nbsp;</label></td>
+</tr>
+<tr>
+<td>
+<table width="100%" id="numlist">
+<tr>
+<td align="right" id="td_1" width="10%">&nbsp;</td>
+<td align="right" id="td_2" width="10%"></td>
+<td align="right" id="td_3" width="10%"></td>
+<td align="right" id="td_4" width="10%"></td>
+<td align="right" id="td_5" width="10%"></td>
+<td align="right" id="td_6" width="10%"></td>
+<td align="right" id="td_7" width="10%"></td>
+<td align="right" id="td_8" width="10%"></td>
+<td align="right" id="td_9" width="10%"></td>
+<td align="right" id="td_10" width="10%"></td>
+</tr>
+<tr>
+<td align="right" id="td_11">&nbsp;</td>
+<td align="right" id="td_12"></td>
+<td align="right" id="td_13"></td>
+<td align="right" id="td_14"></td>
+<td align="right" id="td_15"></td>
+<td align="right" id="td_16"></td>
+<td align="right" id="td_17"></td>
+<td align="right" id="td_18"></td>
+<td align="right" id="td_19"></td>
+<td align="right" id="td_20"></td>
+</tr>
+<tr>
+<td align="right" id="td_21">&nbsp;</td>
+<td align="right" id="td_22"></td>
+<td align="right" id="td_23"></td>
+<td align="right" id="td_24"></td>
+<td align="right" id="td_25"></td>
+<td align="right" id="td_26"></td>
+<td align="right" id="td_27"></td>
+<td align="right" id="td_28"></td>
+<td align="right" id="td_29"></td>
+<td align="right" id="td_30"></td>
+</tr>
+<tr>
+<td align="right" id="td_31"></td>
+<td align="right" id="td_32"></td>
+<td align="right" id="td_33"></td>
+<td align="right" id="td_34"></td>
+<td align="right" id="td_35"></td>
+<td align="right" id="td_36"></td>
+<td align="right" id="td_37"></td>
+<td align="right" id="td_38"></td>
+<td align="right" id="td_39"></td>
+<td align="right" id="td_40"></td>
+</tr>
+<tr>
+<td align="right" id="td_41"></td>
+<td align="right" id="td_42"></td>
+<td align="right" id="td_43"></td>
+<td align="right" id="td_44"></td>
+<td align="right" id="td_45"></td>
+<td align="right" id="td_46"></td>
+<td align="right" id="td_47"></td>
+<td align="right" id="td_48"></td>
+<td align="right" id="td_49"></td>
+<td align="right" id="td_50"></td>
+</tr>
+<tr>
+<td align="right" id="td_51"></td>
+<td align="right" id="td_52"></td>
+<td align="right" id="td_53"></td>
+<td align="right" id="td_54"></td>
+<td align="right" id="td_55"></td>
+<td align="right" id="td_56"></td>
+<td align="right" id="td_57"></td>
+<td align="right" id="td_58"></td>
+<td align="right" id="td_59"></td>
+<td align="right" id="td_60"></td>
+</tr>
+<tr>
+<td align="right" id="td_61"></td>
+<td align="right" id="td_62"></td>
+<td align="right" id="td_63"></td>
+<td align="right" id="td_64"></td>
+<td align="right" id="td_65"></td>
+<td align="right" id="td_66"></td>
+<td align="right" id="td_67"></td>
+<td align="right" id="td_68"></td>
+<td align="right" id="td_69"></td>
+<td align="right" id="td_70"></td>
+</tr>
+<tr>
+<td align="right" id="td_71"></td>
+<td align="right" id="td_72"></td>
+<td align="right" id="td_73"></td>
+<td align="right" id="td_74"></td>
+<td align="right" id="td_75"></td>
+</tr>
+</table>
+</td>
+<td valign="top" align="center"><input type="button" id="start_button" onClick="onClickButton()" value="　Start!　"><br><br>
+<label id="reserved_message"> </label></td>
+</tr>
+</table>
+</td></tr>
+</table>
+</form>
+</body>
+</html>
